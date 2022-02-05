@@ -1,14 +1,12 @@
 
-
-
-const listsize = document.querySelector('listsize');
-const Button = document.querySelector('button');
+const button = document.querySelector(".But");
+const input = document.querySelector('input');
 const list = document.querySelector('userlist');
 
 button.addEventListener('click', function() {
         if (input.value !== "") {
             let li = document.createElement('li');
-            let ldelete = document.createElement('Button');
+            let ldelete = document.createElement('BUTTON');
             ldelete.textContent = "❌";
             ldelete.addEventListener('click', function(){
                 li.remove();
