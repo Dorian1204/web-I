@@ -1,22 +1,22 @@
-const button = document.querySelector(".But");
+const button = document.querySelector(".but");
 const input = document.querySelector('input');
-const list = document.querySelector('userlist');
+const userList = document.querySelector('ul');
 
 button.addEventListener('click', function() {
         if (input.value !== "") {
-            let li = document.createElement('li');
-            let ldelete = document.createElement('BUTTON');
-            ldelete.textContent = "❌";
-            ldelete.addEventListener('click', function(){
-                li.remove();
+            let list = document.createElement('list');
+            let listDelete = document.createElement('BUTTON');
+            listDelete.textContent = "❌";
+            listDelete.addEventListener('click', function(){
+                list.remove();
             });
-            li.textContent = input.value;
-            li.appendChild(ldelete);
-            list.appendChild(li);
+            list.textContent = input.value;
+            list.appendChild(listDelete);
+            userList.appendChild(list);
             input.focus();
             input.value = null;
         }
         else {
             input.focus();
-        };
+        }
 });

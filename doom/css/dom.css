@@ -24,7 +24,7 @@ main {
 	border: 1px solid rgba(0, 0, 0, 0);
 	padding: 0.5rem;
 	background-color: rgb(110, 110, 215);
-	display: flex;
+	display: grid;
 	grid-template-columns: 1fr;
 	width: 95%;
 }
@@ -43,19 +43,20 @@ input {
 label {
 	font-size: 1rem;
 }
-.listcontainer {
+.listc {
 	border: 1px solid rgba(0, 0, 0, 0);
 	margin: 1rem;
 	padding: 1rem;
 }
 
 .list {
+	display: grid;
 	margin: 0.5rem;
 }
 
 ul {
 	margin: 1rem;
-	list-style: none;
+	list-style: flex;
 }
 
 li {
