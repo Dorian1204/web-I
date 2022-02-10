@@ -1,11 +1,11 @@
 
-const button = document.querySelector(".But");
+const button = document.querySelector(".but");
 const input = document.querySelector('input');
 const list = document.querySelector('userlist');
 
 button.addEventListener('click', function() {
         if (input.value !== "") {
-            let li = document.createElement('li');
+            let list = document.createElement('list');
             let ldelete = document.createElement('BUTTON');
             ldelete.textContent = "❌";
             ldelete.addEventListener('click', function(){
@@ -19,5 +19,5 @@ button.addEventListener('click', function() {
         }
         else {
             input.focus();
-        };
+        }
 });
