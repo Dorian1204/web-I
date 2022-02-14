@@ -1,0 +1,453 @@
+/*mobile */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto&display=swap') ;
+
+
+
+body {
+    font-family:  sans-serif;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: Cinzel;
+  }
+  h1 {
+    font-size: 1em;
+    margin-top: 3em;
+    margin-left: 1em;
+  }
+  nav {
+    list-style-type: none;
+    background: rgb(64,224,208);
+  }
+  
+  nav a {
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    color: rgb(64,224,208);
+    padding: 9px
+  }
+  
+  nav a:visited {
+    color: white;
+  }
+  
+  nav a:hover {
+    color: rgb(0, 0, 0);
+    background: white;
+  }
+  
+  nav ul {
+    flex-direction: column;
+    list-style-type: none;
+    margin-top: 0;
+    padding-left: 0
+  }
+  
+  .navigation li:first-child,
+  nav ul {
+    display: flex
+  }
+  
+  .navigation li {
+    display: none
+  }
+  
+  .responsive li {
+    display: flex
+  }
+  
+  nav ul:first-child {
+    background: rgb(64,224,208);
+    margin: .25rem 2%;
+    border: none;
+    font-size: 1.1rem;
+    color: rgb(238, 236, 250);
+    justify-content: center
+  }
+  
+  main {
+    max-width: 950px;
+    margin: 0 auto
+  }
+  
+  header,
+  main {
+    align-content: center
+  }
+  
+  header {
+    background:rgb(1, 128, 115);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding-bottom: 9px;
+  }
+  
+  #motto {
+    font-family: Cinzel;
+    margin-left:2em;
+  }
+  #logo {
+        max-width: 30%;
+    margin-top: 0.5em;
+    margin-right: 9em;
+  }
+  
+  .active {
+    background-color: rgba(151, 240, 231, 0.904);
+  }
+  
+  #hero {
+    width: 100%;
+    display: block;
+    margin: auto
+  }
+  
+  .mainhero {
+    position: relative
+  }
+  
+  footer {
+    color: black;
+    background:white;
+    max-width: 950px;
+    align-content: center;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+    
+  }
+  .contactinfo {
+    justify-content: center;
+    display: grid;
+  }
+  
+  .weathersummary,
+  footer {
+    padding: 17px;
+    text-align: center
+  }
+  
+  .weathersummary {
+    position: absolute;
+    top: 6px;
+    left: 11px;
+    background: rgb(1, 128, 115);
+    color: #f0f0f0;
+    opacity: .8;
+    font-size: 0.7em;
+  }
+  
+  .label {
+    text-align: left
+  }
+  
+  .townname {
+    text-align: center
+  }
+  
+  .fiveday {
+    align-content: center;
+    display: none
+  }
+  
+  .fiveday h2 {
+    text-align: center
+  }
+  
+  .fiveday table td {
+    background: rgb(1, 128, 115);
+  }
+  
+  .fiveday table th {
+    background: rgb(1, 128, 115);
+  }
+  
+  .fiveday table td,
+  th {
+    padding: 40px;
+  }
+  
+  .forecastimg {
+    max-width: 52px
+  }
+  
+  
+  #class {
+    max-width: 100%
+  }
+  
+  article {
+    background: rgb(1, 128, 115);
+    padding: 11px;
+    overflow: auto
+  }
+  
+  .contact {
+    display: flex;
+    flex-flow: column wrap
+  }
+  
+  .calendar,
+  .contact {
+    background:rgb(1, 128, 115);
+    padding: 11px
+  }
+  
+  .calendar ul {
+    margin-left: 21px
+  }
+  
+  .gallerygrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%
+  }
+  
+  .gallerygrid figure img {
+    width: 100%
+  }
+  
+  form fieldset {
+    margin: 2.1rem 0;
+    border: 2px solid rgb(1, 128, 115);
+    padding: .5rem 2%
+  }
+  
+  form legend {
+    color: rgb(1, 128, 115);
+    padding: 0 .6rem
+  }
+  
+  form label.top {
+    display: block;
+    padding-top: 0.9rem;
+    font-size: .7rem;
+    color:rgb(1, 128, 115);;
+  }
+  
+  form label.sbs,
+  form label.top {
+    justify-content: center
+  }
+  
+  form label.top input,
+  form label.top select {
+    
+    display: block;
+    padding: .76rem;
+    width: 100%;
+    max-width: 20.5rem;
+    background-color: rgb(216, 252, 249);
+  }
+  
+  form label.sbs {
+    display: block;
+    padding: .76rem;
+    color: #030303;
+    font-size: .85rem
+  }
+  
+  form input.submitBtn {
+    border: none;
+    background-color: rgb(105, 243, 229);
+    color: #000000;
+    padding: .74rem 1.52rem;
+    margin: 0 0 2rem 2%;
+    width: 96%;
+    max-width: 20rem;
+    border-radius: 1.01rem
+  }
+  
+  form label.top:required {
+    border-left: 5px solid 
+  }
+  
+  form label.top:required:valid {
+    border-left: 5px solid 
+  }
+  
+  form label.comments {
+    height: 20px;
+    width: 100%;
+    max-width: 20rem
+  }
+  
+  .towns {
+    display: flex;
+    flex-flow: column wrap;
+    margin-bottom: 10px
+  }
+  
+  .townPic {
+    max-width: 100%
+  }
+  .map {
+    grid-area: right;
+    display:none;
+    
+  }
+  
+  @media only screen and (min-width:32.5em) {
+    h1 {
+      font-size: 2em;
+      margin-top: 3em;
+    margin-left: 1em;
+  }
+  
+  .weathersummary {
+   
+    font-size: 1em;
+  }
+  #motto {
+    
+    margin-left:6em;
+  }
+    .gallerygrid {
+      grid-template-columns: repeat(2, 1fr)
+    }
+  
+    .towns {
+      display: grid;
+      grid-template-areas: "left middle right";
+      grid-column-gap: 11px
+    }
+  
+    #Preston {
+      grid-area: left
+    }
+  
+    #SodaSprings {
+      grid-area: middle
+    }
+  
+    #FishHaven {
+      grid-area: right
+    }
+  
+    .contact {
+      background: #f0f0f0;
+      padding: 11px;
+      display: grid;
+      grid-template-areas: "left right";
+      justify-items: center
+    }
+  
+    .contactinfo {
+      grid-area: left;
+      
+        display: block;
+      }
+    
+  
+    .map {
+      grid-area: right;
+      display:block;
+      
+    }
+  }
+  #logo {
+    max-width: 30%;
+margin-top: 0.5em;
+margin-right: 0.01em;
+}
+
+  
+  @media only screen and (min-width:60em) {
+    nav ul {
+      flex-direction: row
+    }
+    .weathersummary {
+   
+      font-size: 1em;
+    }
+    
+    .map {
+      grid-area: right;
+      display:block;
+    }
+
+    #motto {
+     
+      margin-left:6em;
+    }
+    h1 {
+      font-size: 2em;
+      margin-top: 3em;
+    margin-left: 1em;
+  }
+  
+    nav ul li {
+      display: inline-block;
+      flex: 1 1 auto;
+      justify-content: center;
+      margin: 0 auto
+    }
+  
+    nav li a {
+      padding: 14px 16px
+    }
+  
+    .Menu {
+      display: none
+    }
+  
+    .navigation li {
+      display: inline-flex
+    }
+  
+    ul {
+      margin-top: 16px
+    }
+  
+    header {
+      margin-bottom: -19px
+    }
+  
+    #class {
+      max-width: 35%;
+      float: right
+    }
+  
+    .fiveday {
+      display: table;
+      margin: 0 auto
+    }
+  
+    table {
+      border-collapse: collapse;
+      border: 1px solid #3d3838;
+    }
+  
+    table,
+    td,
+    th {
+      text-align: center;
+      vertical-align: middle
+    }
+  
+    .gallerygrid {
+      grid-template-columns: repeat(3, 1fr)
+    }
+  
+    .gallerygrid figure:hover {
+      box-shadow: 0 0 22px #3d3838;
+    }
+    #logo {
+      max-width: 40%;
+  margin-top: 0.5em;
+  margin-right: 0em;
+  }
+  
+  }

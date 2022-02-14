@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Weather and local events Preston, Idaho">
+  <title> Storm Center</title>
+ 
+  <link href="/lesson10/css/lesson10-1/lesson8/normalize.css" rel="stylesheet">
+  <link href="/lesson10/css/lesson10-1/lesson8/lesson8.css" rel="stylesheet">
+  <link rel="shortcut icon" href="/lesson6/images/weatherlogo.png">
+</head>
+
+<body>
+  <header>
+    <img src="/lesson6/images/weatherlogo.png" alt="website-logo-cloud-storm-sun" id="logo">
+    <div class="headertext">
+      <h1>The Weather Today</h1>
+      <div id="motto">
+        <h3>Report Your Storm</h3>
+      </div>
+    </div>
+  </header>
+  <nav>
+
+    <ul class="navigation">
+      <li><a href="#" class="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+      <li><a href="/lesson10/homepage/index.html"><h3>Home</h3></a></li>
+      <li><a href="/lesson10/preston/index.html"><h3>Preston</h3></a></li>
+      <li><a href="/lesson10/sodaspring/index.html"><h3>Soda Springs</h3></a></li>
+      <li><a href="/lesson10/fishhaven/index.html"><h3>Fish Haven</h3></a></li>
+      <li><a class="active" href="/lesson10/stormcenter/index.html"><h3>Storm Center</h3></a></li>
+      <li><a href="/lesson10/gallery/index.html"><h3>Gallery</h3></a></li>
+    </ul>
+  </nav>
+  <main>
+    
+    <form method="GET" action="/lesson10/stormcenter/thanks.html">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label class="top">Full Name*: <input type="text" name="name" minlength="5" pattern="[A-Za-z\s]+$" required></label>
+        <label class="top">Email: <input type="email" name="email" placeholder="someone@email.com"></label>
+        <label class="top">Phone*: <input type="tel" name="phone" required></label>
+        <label class="top">Zip Code*: <input type="number" name="zip" required></label>
+      </fieldset>
+      <fieldset>
+        <legend>Storm Information</legend>
+        <label class="top">Storm Date: <input type="date" name="date"></label>
+        <label class="top">Storm Type: <input type="text" list="stormTypes" name="stormType"
+            placeholder="Please Select">
+          <datalist id="stormTypes">
+            <option value="Flash Flood"></option>
+            <option value="Hail"></option>
+            <option value="Hurricane"></option>
+            <option value="Thunderstorm"></option>
+            <option value="Tornado"></option>
+          </datalist></label>
+      
+        <label class="stormseverity">
+                Storm Severity : <span id="ratingvalue">5</span>
+                <input type="range" id="rating" value="5" min="1" max="10" step="1" list="tickmarks"
+                    oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                  <datalist id="tickmarks">
+                      <option value="0"></option>
+                      <option value="1"></option>
+                      <option value="2"></option>
+                      <option value="3"></option>
+                      <option value="4"></option>
+                      <option value="5"></option>
+                      <option value="6"></option>
+                      <option value="7"></option>
+                      <option value="8"></option>
+                      <option value="9"></option>
+                      <option value="10"></option>
+                  </datalist></label>
+
+
+        <label class="top">Storm Region:
+          <select name="region">
+            <option>Select Region</option>
+            <option value="Preston">Preston</option>
+            <option value="Soda Springs">Soda Springs</option>
+            <option value="Fish Haven">Fish Haven</option>
+          </select></label>
+        <label class="sbs">User In-danger: </label>
+        <label class="sbs"><input type="radio" name="danger" value="Yes">Yes</label>
+        <label class="sbs"><input type="radio" name="danger" value="Maybe">Maybe</label>
+        <label class="sbs"><input type="radio" name="danger" value="No">No</label></fieldset>
+      <fieldset>
+        <legend class="top comments">Comments</legend>
+        <label class="item">Storm Comments <textarea name="comments" rows="8"
+          cols="50"></textarea></label></fieldset>
+      <input type="submit" value="Report My Storm" class="submitBtn">
+    </form>
+  </main>
+  <footer>
+    <p class="footer">&copy; Dorian Lapi | Brigham Young University - Idaho|
+      <span id="currentdate"></span>
+    </p>
+  </footer>
+  <script src="/lesson10/js/lesson8/json.js"></script>
+ 
+</body>
+
+</html>
