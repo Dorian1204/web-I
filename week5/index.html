@@ -1,20 +1,22 @@
-<!DOCTYPE HTML>
-<html lang="en-us">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="boisechamber">
-        <title>BOISE METRO CHAMBER</title>
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/boise.css">
-        <link rel="icon" href="../img/sicon.png">
-    </head>
-    <body>
-        <header>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="boisechamber">
+    <title>Saupark Chamber of Commerce</title>
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/chamber.css">
+    <link rel="icon" href="../img/sicon.png">
+</head>
+<body>
+<div class="content">
+    <header>
+        <div class="header-grid">
+        <div class="logo-box">
             <img id="icon" src="../img/sicon.png" alt="boisechamber">
-            <h1>BOISE METRO CHAMBER</h1>
-            <div id="moto">What's your next adventure</div>
-        </header>
+          </div>
         <nav>
             <ul class="navigation">
                 <li><a class="ham" href="#" >Menu</a></li>
@@ -22,22 +24,84 @@
                 <li><a href="#">Jobs</a></li>
                 <li><a href="#">Community</a></li>
                 <li><a href="#">Fun</a></li>
-
             </ul>
-        </nav>
-        <main>
-            <h2>Boise Idaho</h2>
-            <div class="contentbox">Boise</div>
-            <div class="contentbox">Jobs</div>
-            <div class="contentbox">Community</div>
-            <div class="contentbox">Fun</div>
-        </main>
-        <footer>
-            <p id="footwords">&copy; <span id="currentyear"></span>  Dorian Lapi | Boise METRO CHAMBER </p>
-            <p><span id="date"></span></p>
-            <script src="js/boise.js"></script>
-            <script src="js/main.js"></script>
-        </footer>
-        
-    </body>
+          </nav>
+          </div>
+        <div class="date box"><h2 id="day"></h2></div>
+        <div class="meeting"><h3>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h3></div>
+    </header>
+    <main>
+        <div class="hero"><h1 id="hero">Boise Downtown</h1>
+          <button id="bhero" type="button">Join the Chamber</button>
+        <div id="hero-box">
+          <picture>
+            <source srcset="images/large.jpg" media="(min-width: 1000px)">
+            <img src="images/Boise-idaho-downtown-large.jpg" alt="large-hero"/>
+            <source srcset="" media="(min-width: 800px) and (max-width: 999px)">
+            <img src="images/Boise-idaho-downtown-m.jpg" alt="large-hero"/>
+            <source srcset="images/small.jpg" media="(min-width: 1px) and (max-width: 799px)">
+            <img src="images/Boise-idaho-downtown-small.jpg" alt="large-hero"/>
+          </picture>
+        </div>
+        </div>
+        <div class="event"><h2>Ribbon Cutting</h2>
+          <h3>The Diamond Shack</h3>
+          <p>Join us for the grand opening of The Diamond Shack, Thursday at 1pm</p>
+        </div>
+        <div class="weather"><h2>Weather</h2>
+          <div class="weather-box"><img id="weather" src="weather.png" alt="weather icon"/> <h1><span id="temp">-30</span>&#176;F</h1></div>
+          <p>Wind Speed: <span id="speed">120</span> mph</p>
+          <p>Wind Chill:<span id="chill"></span></p>
+        </div>
+        <div class="news">
+          <h2>News Release</h2>
+          <p>News information will go here</p>
+        </div>
+        <div class="spotlights">
+          <div id="spotlight1">
+            <h2>Thankful Transport</h2>
+            <img class="farm" src="farm.png" alt="farm image"/>
+            <h4>"We get it there for you!"</h4>
+            <p class="spotlight">We transport</p>
+            <p class="spotlight">(000)-000-0000</p>
+          </div>
+        <div id="spotlight2">
+          <h2>Code Primera</h2>
+          <img class="pencils" src="images/pencils.png" alt="pencils"/>
+          <h4>An after school coding program</h4>
+          <p class="spotlight">codeprimera@info.com</p>
+          <p class="spotlight">(555)-545-5555</p>
+        </div>
+        <div id="spotlight3">
+          <h2>Build a Treefort</h2>
+          <img class="tree" src="images/images.png" alt="treehouse"/>
+          <h4>Over 1000 plans!</h4>
+          <p class="spotlight">trehouseday@info.com</p>
+          <p class="spotlight">(000)-000-0000</p>
+        </div>
+      </div>
+        <div class="join">
+          <button id="joinbutton" type="button">Join Us!</button>
+          <p>Discover how to join the chamber of commerce and how it will benefit your organization!</p>
+        </div>
+    </main>
+    <footer>
+      <div class="footer-main">
+        <div class="footer-box">
+            <img class="logo"
+              src="images/fe0d371f3d024970b95c20c3b220f2dc-min.webp"
+              alt="Logo image"
+            />
+            </div>
+    
+          <h2>bussines name</h2>
+          <p>bussines info</p>
+          <ul>
+            <li><a href="#">Location Map</a></li>
+          </ul>
+
+      </footer>
+    <script src="js/main.js"></script>   
+</div>
+</body>
 </html>
