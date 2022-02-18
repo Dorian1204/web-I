@@ -1,21 +1,37 @@
-/*This will connect to html and apply meny as a hamburger style*/
-const hambutton = document.querySelector('.ham');
-const mainnav = document.querySelector('.navigation')
+const nav = document.querySelector('.navigation');
+nav.addEventListener('click', ()=>
+{nav.classList.toggle('shown')});
 
-hambutton.addEventListener('click', () => {const responsive = 'responsive';
-mainnav.classList.toggle(responsive)}, false);
+const weekdays = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+const months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
 
-// To solve the mid resizing issue with responsive class on
-window.onresize = () => {if (window.innerWidth > 760) mainnav.classList.remove('responsive')};
+const d = new Date();
+let weekday = weekdays[d.getDay()];
+let month = months[d.getMonth()];
+let day = d.getDate();
+let year =d.getFullYear();
+document.getElementById("day").innerHTML = "BOISE Chamber of Commerce | " + weekday + ", " + day + " " + month + " " + year;
 
-/*** Programming Notes **************************************
-  Arrow Functions - es6 syntactically compact alternative to a regular function expression
-  see https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
-  or https://www.w3schools.com/js/js_arrow_function.asp
-  classList property - https://developer.mozilla.org/en-US/docs/Web/API/Element/classList
-  */
- //current year
- 
-var n = new Date();
-var y = n.getFullYear();
-document.getElementById("currentyear").innerHTML = y ;
+
+
+let currentdate = document.lastModified;
+      document.querySelector(".modified").textContent =
+        "Last Updated: " + currentdate;
+document.querySelector(".year").innerHTML = new Date().getFullYear();
+
+if (d.getDay() == 1 || d.getDate() == 2) {
+  document.querySelector(".meeting").style.display = "block";
+};
+
+
+let notapplicapble = " N/A"
+let temp = parseFloat(document.getElementById('temp').innerHTML);
+let windspeed = parseFloat(document.getElementById('speed').innerHTML);
+let windchill = Math.round((35.74 + (0.6215 * temp))-(35.75 * Math.pow(windspeed,0.16)) + (0.4275*temp*Math.pow(windspeed,0.16)));
+
+if (Math.round(temp) <= 50 && Math.round(windspeed) >= 3) {
+  document.getElementById('chill').innerHTML = " " + windchill + "&#176;F";
+}
+else{
+  document.getElementById('chill').innerHTML = notapplicapble;
+};
