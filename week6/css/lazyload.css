@@ -1,5 +1,29 @@
 picture img{
-    display:block;  
-    margin: 0 auto;
-    padding: 5px;
-  }
+
+  display:block;  
+
+  margin: 0 auto;
+
+  padding: 6px;
+
+  filter: blur(0.15px);
+
+  transition: filter(2.5s);
+
+}
+
+
+
+h1 {
+
+  text-align: center;
+
+}
+
+
+
+picture img[data-src] {
+
+  filter: blur(1px);
+
+}
