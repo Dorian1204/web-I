@@ -47,10 +47,17 @@
           <p>See you tonight at 7pm!</p>
         </div>
         <div class="weather"><h2>Weather</h2>
-          <div class="weather-box"><img id="weather" src="images/weatherlogo.png" alt="weather icon"/> <h1><span id="temp">-30</span>&#176;F</h1></div>
-          <p>Wind Speed: <span id="speed">50</span> mph</p>
-          <p>Wind Chill:<span id="chill"></span></p>
+          
+          
+          <h2> <span id="temp"></span>&#176;F</h2>
+          <img id="weathericon" src="http://openweathermap.org/img/w/01n.png" alt="weather image"/> 
+                      <p>Overcast:<span id="current"></span></p>
+                      <p>Wind Speed: <span id="windspeed"></span> mph</p>
+                      <p>Wind Chill:<span id="windchill"></span>&#8457;</p>
+
+                      
         </div>
+
         <div class="news">
           <h2>News Release</h2>
           <p>News information will go here</p>
@@ -102,7 +109,8 @@
         <div class="footer-date"><p>&copy; <span class="year"></span> Boise Chamber | Dorian Lapi | WDD 230 Project | <span class="modified"></span> </p>
         </div>
       </footer>
-    <script src="js/boise.js"></script>   
+    <script src="js/boise.js"></script>  
+    <script src="js/weather.js"></script>  
 </div>
 </body>
 </html>
