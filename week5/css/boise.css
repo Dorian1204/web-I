@@ -299,7 +299,16 @@ div.footer-box {
     div.weather{
         grid-column: 1;
         grid-row: 2;
+
     }
+
+    #weather-values{
+        margin: 0em;
+        text-align: left;
+        padding-left: 7px;
+        }
+
+        
     div.join{
         display:block;
         grid-column: 1;
