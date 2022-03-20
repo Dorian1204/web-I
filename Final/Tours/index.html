@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Weather and local events Preston, Idaho">
+  <title> Tours</title>
+ 
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <link rel="shortcut icon" href="images/logos.png">
+</head>
+
+<body>
+  <header>
+    <img src="images/logos.png" alt="Wheel logo" id="logo">
+    <div class="headertext">
+      <h1>The Mountain Spoke</h1>
+      <div id="motto">
+      <h3>Your Spokes People</h3>
+      </div>
+    </div>
+  </header>
+  <nav>
+    <ul class="navigation">
+        <li><a href="#" class="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="/Final/Home/index.html"><h3>Home</h3></a></li>
+        <li><a class="active" href="/Final/Tours/index.html"><h3>Tours</h3></a></li>
+        <li><a href="/Final/Next/index.html"><h3>Next</h3></a></li>
+        <li><a href="/Final/Cycle/index.html"><h3>Cycle</h3></a></li>
+        <li><a href="/Final/Purchase/index.html"><h3>Purchase</h3></a></li>
+        <li><a href="/Final/IBike/index.html"><h3>I Bike</h3></a></li>
+    </ul>
+  </nav>
+  <main>
+    <h2>Tours, Idaho</h2>
+
+        <div class="mainhero">
+         
+      
+
+            <img srcset="images/tourbike.jpg 400w,
+            images/tourbike.jpg 800w,
+            images/tourbike.jpg 1200w" sizes="(max-width: 400px) 400px,
+            (max-width: 800px) 800px,
+            1200px" src="images/tourbike.jpg" alt="tours field image" id="hero">
+
+           
+           
+             <div id ="weather-summary">
+                <h4>Weather Summary</h4>
+                <div id="weather-table">
+                    <div id="weather-stats">
+                        <p>Currently:</p>
+                        <p>High:</p>
+                        <p>Wind Chill:</p>
+                        <p>Humidity:</p>
+                        <p>Wind Speed:</p>
+                    </div>
+                    <div id="weather-values">
+                        <p class="rc"><span id="current"></span></p>
+                        <p class="rc"><span id="temp"></span>&#8457;</p>
+                        <p class="rc"><span id="windchill"></span>&#8457;</p>
+                        <p class="rc"><span id="humidity"></span>%</p>
+                        <p class="rc"><span id="windspeed"></span> mph</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <h2>5 Day Forecast</h2>
+        <div id="forecast-table"> 
+          <div class="forecast-days">
+              <p><span id="day1" ></span></p>
+              <div>
+                  <img src="http://openweathermap.org/img/w/01n.png" id="icon1" alt="day1">
+                  <p><span id="tempd1"></span> &#8457;</p>
+              </div>
+              <p><span id="day2"></span></p>
+              <div>
+                  <img src="http://openweathermap.org/img/w/01n.png" id="icon2" alt="day2">
+                  <p><span id="tempd2"></span> &#8457;</p>
+              </div>
+              <p><span id="day3"></span></p>
+              <div>
+                  <img src="http://openweathermap.org/img/w/02n.png" id="icon3" alt="day3">
+                  <p><span id="tempd3"></span> &#8457;</p>
+              </div>
+              <p><span id="day4"></span></p>
+              <div>
+                  <img src="http://openweathermap.org/img/w/04d.png" id="icon4" alt="day4" >
+                  <p><span id="tempd4"></span> &#8457;</p>
+              </div>
+              <p><span id="day5" ></span></p>
+              <div>
+                  <img src="http://openweathermap.org/img/w/04d.png" id="icon5" alt="day5">
+                  <p><span id="tempd5"></span> &#8457;</p>
+              </div>
+          </div>
+    
+      </div>
+      
+
+                     
+   
+    <section class="calendar">
+      <h4>Upcoming Tours</h4>
+
+      <p id="events1"></p>
+      <div id="events" class="content1">
+      <div id="event-content">
+        
+         
+    </div>
+    <h4>Join I Bike for more details about the upcoming Tours and Events.</h4>
+    </div>
+    </section>
+
+
+    
+    <article>
+     
+
+      
+      <img srcset="images/idahotour.jpg 400w,
+      images/idahotour.jpg 800w,
+      images/idahotour.jpg 1200w" sizes="(max-width: 400px) 400px,
+        (max-width: 800px) 800px, 1200px" src="images/idahotour.jpg" alt="tours picture" id="class">
+     
+      <h4>Tours in Idaho</h4>
+      <pre><a href="https://visitidaho.org/">visitidaho.org</a></pre>
+      <p><a>In Idaho, taking the road less traveled is one of the best ways to explore the state.
+         And with 31 unique scenic byways, there are plenty of opportunities to stop off for an adventure.
+         Roll down the windows, feel the cool breeze and gaze upon true wilderness as you sweep through the
+         mountains and valleys of Idaho’s vast landscapes.</a></p>
+    </article>
+    <section class="contact">
+      <div>
+        <h3>Contact information</h3>
+        <p>Phone: 
+          (406) 999-9999</p>
+        <p>Email: Themountainspoke@gmail.com</p>
+      </div>
+      <div class="map">
+        
+          
+      <iframe class="googlemap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2787.9314410303914!2d-111.09290082013726!3d45.67227662765851!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5345459ab72cb6df%3A0xbb98968f9648ea88!2s3950+Valley+Commons+Dr%2C+Bozeman%2C+MT+59718!5e0!3m2!1sen!2sus!4v1531957763030" width="400" height="300" style="border:0" allowfullscreen></iframe>
+      </div>
+
+
+    </section>
+
+  </main>
+  <footer>
+    <p class="footer">&copy;  The Rights Reserved |The Mountain Spoke - Idaho | Call: (406) 999-9999 <a href="/Final/creditsource/index.html">Site Credit Source</a>   
+    
+      <span id="currentdate"></span>
+    </p>
+  </footer>
+  
+  <script src="js/main.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/json.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Page</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/boise.css">
+</head>
+<body>
+    <header>
+        <div class="header-grid">
+        <div class="logo-box">
+            <img class="logo"
+              src="../images/sicon.png"
+              alt="Logo image"
+            />
+          </div>
+        <nav>
+            <ul class="navigation">
+            <li><a href="#">&#9776; menu</a></li>
+              <li><a href="../discover/index.html">Discover</a></li>
+              <li><a href="../index.html">Directory</a></li>
+              <li><a href="index.html">Join</a></li>
+              <li><a href="../contact/index.html">Contact</a></li>
+            </ul>
+          </nav>
+          </div>
+        <div class="date box"><h2 id="day">Join the Chamber of Commerce!</h2></div>
+    </header>
+    <main class="form">
+    <div id="formbox">
+        <h3>Join the Chamber Application</h3>
+        <form method="get" action="thankyou.html">
+            <label for="fname">First Name *</label>
+            <input id="fname" type="text" name="firstName" required>
+            <label for="lname">Last Name *</label>
+            <input id="lname" type="text" name="lastName" required>
+            <label for="businessIdeas">Business Ideas* </label>
+            <input id="businessIdeas" type="text" name="bt" minlength="7" pattern="[ -A-Za-z]+" required>
+            <label for="email">Email: </label>
+            <input id="email" type="email" name="email" placeholder="name@example.com">
+            <label for="phone">Phone Number *</label>
+            <input id="phone" type="tel" name="phone" required>
+            <label for="major">Major *</label>
+            <input id="major" type="text" required>
+            <label for="level">Study Level </label>
+            <select id="level" name="level">
+                <option value="Freshmen">Freshmen</option>
+                <option value="junior">Junior</option>
+                <option value="Senior">Senior</option>
+                <option value="Graduate">Grad</option>
+              </select>
+            <label for="description">Career Description </label>
+            <textarea id="description"></textarea>
+            <input type="hidden" name="todaydate" value="CurrentDate">
+            <input type="submit" value="submit">
+        </form>
+        <p>* indicates a required field</p>
+    </div>
+
+    </main>
+    <footer>
+        <div class="footer-main">
+    
+      
+            <h2>Boise Chamber</h2>
+            <p>Boise, ID | (000)-000-0000</p>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d92456.65626353234!2d-116.30393761267244!3d43.600908984648626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54aef172e947b49d%3A0x9a5b989b36679d9b!2sBoise%2C%20ID!5e0!3m2!1sen!2sus!4v1645160723257!5m2!1sen!2sus" width="500" height="200"></iframe>        
+              </div>
+  </div>
+  <div class="footer-date"><p>&copy; <span class="year"></span> Boise Chamber | Dorian Lapi | WDD 230 Project | <span class="modified"></span> </p>
+  </div>
+
+<script src="../js/boise.js"></script>  
+        </footer> 
+</body>
+</html>
