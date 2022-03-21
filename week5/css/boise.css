@@ -10,16 +10,14 @@ p {
 }
 header {
     background-color: #ffffff;
-    margin: auto;
     min-height: 80px;
-    text-align: flex;
+
 }
 div.header-grid{
     display:flexbox;
     align-items: center;
 }
 nav{
-    display:flex;
     padding: 0.5em;
 }
 nav ul{
