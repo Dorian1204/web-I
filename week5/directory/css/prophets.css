@@ -1,0 +1,29 @@
+.card{
+    background-color: rgb(155, 205, 221);
+    text-align: center;
+    margin: 5px;
+    border: 2px solid rgb(190, 190, 190);
+    max-width: 300px;
+}
+.card img{
+    width: 50%;
+    display: block;
+    margin: 15px auto 10px;
+    box-shadow: -2px 5px 8px rgb(161, 161, 161);
+}
+
+.cards{
+   justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px;
+    width: 94%;
+    
+}
+h1,h2{
+    
+    font-weight: bolder;
+    color: rgb(60, 10, 77);
+    text-align: center;
+    }
+   
