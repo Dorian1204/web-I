@@ -1,4 +1,4 @@
-fetch('')
+fetch('https://dorian1204.github.io/web-I/week5/directory/jason/bu.json')
   .then(function (response) {
     return response.json();
   })
@@ -50,7 +50,7 @@ function clearCards() {
   cards.forEach((item)=>{
       item.remove();
   });
-  fetch('')
+  fetch('https://dorian1204.github.io/web-I/week5/directory/jason/bu.json')
   .then(function (response) {
     return response.json();
   })
@@ -78,7 +78,7 @@ function clearList() {
   tableIdToRemove.parentNode.removeChild(tableIdToRemove);
   
   
-  fetch('https://jacobtapp23.github.io/wdd230/chamber/js/data.json')
+  fetch('https://dorian1204.github.io/web-I/week5/directory/jason/bu.json')
   .then(function (response) {
     return response.json();
   })
@@ -126,7 +126,7 @@ if((window.innerWidth > 798 && window.innerWidth < 802) || (window.innerWidth > 
   cards.forEach((item)=>{
       item.remove();
   });
-  fetch('https://jacobtapp23.github.io/wdd230/chamber/js/data.json')
+  fetch('https://dorian1204.github.io/web-I/week5/directory/jason/bu.json')
   .then(function (response) {
     return response.json();
   })
