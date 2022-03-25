@@ -2,7 +2,7 @@
   "directory": [
     {
       "name": "Boise Beyond",
-      "address": "123 Main St, Boise, ID 83701",
+      "address": "123 Main St, Boise, ID 83701       ",
       "phone": "(208) 455-5833",
       "website": "aboveandbeyondpc.com",
       "imageurl": "https://dorian1204.github.io/web-I/week5/directory/images/boise_beyond.jpg"
@@ -16,7 +16,7 @@
     },
     {
       "name": "Dynamic Solutions",
-      "address": "373 INVERNESS PARKWAY",
+      "address": "373 INVERNESS PARKWAY             ",
       "phone": "800.641.5215",
       "website": "dynamicsolutions.com",
       "imageurl": "https://dorian1204.github.io/web-I/week5/directory/images/dynamic_solutions.jpg"
@@ -30,7 +30,7 @@
     },
     {
       "name": "Quay",
-      "address": "2056 Brea Mall, Suite #2056",
+      "address": "2056 Brea Mall, Suite #2056               ",
       "phone": "(657) 286-6380",
       "website": "quayaustralia.com",
       "imageurl": "https://dorian1204.github.io/web-I/week5/directory/images/quay.jpg"
@@ -51,28 +51,28 @@
     },
     {
       "name": "Stead Fast",
-      "address": "privateinvestigatorboise.com,",
+      "address": "privateinvestigatorboise.com,                  ",
       "phone": "(208) 949-1425",
       "website": "privateinvestigatorboise.com,",
       "imageurl": "https://dorian1204.github.io/web-I/week5/directory/images/stead_fast.jpg"
     },
     {
       "name": "Tree Service",
-      "address": "5821 W Elmer St, Boise, ID 83703",
+      "address": "5821 W Elmer St, Boise, ID 83703                ",
       "phone": "(208) 473-8223",
       "website": "boisetree.com",
       "imageurl": "https://dorian1204.github.io/web-I/week5/directory/images/tree_service.jpg"
     },
     {
       "name": "Verasion",
-      "address": " 10808 428TH AVE. SE, NORTH BEND, WA 98045",
+      "address": " 10808 428TH AVE. SE, NORTH BEND, WA 98045       ",
       "phone": " 425-233-5638",
       "website": "www.czcellars.com",
       "imageurl": "https://dorian1204.github.io/web-I/week5/directory/images/verasion.jpg"
     },
     {
       "name": "Women of the Year",
-      "address": "2unknown West 1th South. Boisy ID, 83703",
+      "address": "2unknown West 1th South. Boisy ID, 83703         ",
       "phone": "900 999 9999",
       "website": "womenoftheyear.com",
       "imageurl": "https://dorian1204.github.io/web-I/week5/directory/images/women_of_the_year.jpg"
