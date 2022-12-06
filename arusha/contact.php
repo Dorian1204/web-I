@@ -6,7 +6,7 @@
 |--------------------------------------------------------------------------
 */
 
-define("EMAIL" , "spam@unitedthemes.com");
+define("EMAIL" , "spam@arusha.co");
 define("SUBJECT" , "You've got mail");
 
 define("NAME_MSG" , "Please insert your name");

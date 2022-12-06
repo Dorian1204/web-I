@@ -49,9 +49,9 @@
 		var ut_word_rotator = function() {
                 
 			var ut_rotator_words = [
-				'We are <span>Brooklyn </span>',
-				'We love to <span>Design</span>',
-				'We love <span>Coding</span>'
+				'We are <span>Arusha </span>',
+				'We love to <span>Work</span>',
+				'We love <span>Helping</span>'
 			] ,
 			counter = 0;                
 			
